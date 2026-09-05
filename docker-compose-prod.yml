@@ -1,0 +1,6 @@
+services:
+  patient-portal:
+    image: vitalhealth/portal:v1
+    environment:
+      - GCP_SA_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3...\n-----END PRIVATE KEY-----"
+      - HIPAA_VAULT_TOKEN="hvs.CAESIG3x729103847592817239487"
